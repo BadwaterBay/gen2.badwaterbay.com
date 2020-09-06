@@ -1,0 +1,95 @@
+// Home.scss
+
+// Import modules
+@use "sass:map";
+@use 'variables' as var;
+@use 'fonts' as font;
+@use 'colors' as color;
+@use 'extend';
+
+.home {
+  .header {
+    min-height: 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: map.get(color.$palette, p2);
+    color: map.get(color.$font, s1);
+    font-family: font.$title;
+    font-size: calc(10px + 2vmin);
+
+    .masthead {
+      padding: 0.5rem 1rem;
+
+      ul.profile-icons {
+        list-style-type: none;
+        text-align: center;
+        margin: 0.5rem;
+        padding: 1rem 0.5rem;
+
+        li {
+          font-size: 2rem;
+          display: inline;
+          padding: 0.25rem 0.5rem;
+
+          a {
+            @extend %a-no-text-decoration-secondary;
+          }
+        }
+      }
+    }
+
+    .scroll-down button {
+      font-size: 2rem;
+      color: map.get(color.$font, s1);
+    }
+  }
+
+  .main-content {
+    .architecture-diagram {
+      margin: 0;
+      padding: 0;
+      background-color: map.get(color.$palette, p5);
+
+      & > div {
+        padding: 1rem;
+      }
+    }
+
+    .site-under-construction {
+      margin: 0;
+      padding: 0;
+      background-color: map.get(color.$palette, p3);
+
+      & > div {
+        padding: 1rem;
+        color: map.get(color.$font, p1);
+
+        div,
+        p {
+          margin: 0;
+          padding: 1rem;
+        }
+      }
+    }
+
+    .previous-websites {
+      margin: 0;
+      padding: 0;
+      background-color: map.get(color.$palette, p4);
+
+      & > div {
+        padding: 1rem;
+        color: map.get(color.$font, p1);
+
+        div,
+        p {
+          margin: 0;
+          padding: 1rem;
+        }
+      }
+    }
+  }
+}

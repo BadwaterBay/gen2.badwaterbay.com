@@ -1,0 +1,32 @@
+// _extend.scss
+
+@use 'colors' as color;
+@use "sass:map";
+
+%a-no-text-decoration-primary {
+  &:link,
+  &:visited {
+    color: map.get(color.$font, p3);
+    text-decoration: none;
+  }
+
+  &:hover,
+  &:active {
+    color: map.get(color.$palette, p2);
+    text-decoration: none;
+  }
+}
+
+%a-no-text-decoration-secondary {
+  &:link,
+  &:visited {
+    color: map.get(color.$font, s1);
+    text-decoration: none;
+  }
+
+  &:hover,
+  &:active {
+    color: map.get(color.$palette, p1);
+    text-decoration: none;
+  }
+}
