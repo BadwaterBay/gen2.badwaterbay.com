@@ -1,0 +1,30 @@
+// App.scss
+// App styles
+
+// Load modules
+@use "sass:map";
+@use 'fonts' as font;
+@use 'colors' as color;
+@use 'extend';
+
+// Global styles
+
+body {
+  margin: 0;
+}
+
+code {
+  font-family: font.$mono;
+}
+
+.main-content {
+  font-family: font.$body;
+}
+
+a {
+  color: map.get(color.$font, pa);
+
+  button {
+    @extend %a-no-text-decoration-primary;
+  }
+}

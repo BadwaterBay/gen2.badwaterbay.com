@@ -1,0 +1,42 @@
+// Footer.scss
+
+// Import modules
+@use 'variables' as var;
+@use 'fonts' as font;
+@use 'colors' as color;
+@use 'extend';
+@use 'sass:map';
+
+#component-footer {
+  font-family: font.$body;
+  padding: 1rem 2rem;
+  color: map.get(color.$font, p1);
+  background-color: map.get(color.$palette, p4);
+  text-align: center;
+
+  ul.profile-icons {
+    list-style-type: none;
+    text-align: center;
+    margin: 1rem;
+    padding: 0;
+
+    li {
+      font-size: 2rem;
+      display: inline;
+      padding: 0.5rem;
+
+      a {
+        @extend %a-no-text-decoration-primary;
+      }
+    }
+  }
+
+  .copyright {
+    padding: 0.5rem;
+  }
+
+  #back-to-top button {
+    font-size: 2rem;
+    color: map.get(color.$font, p3);
+  }
+}

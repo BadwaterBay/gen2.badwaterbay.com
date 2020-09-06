@@ -1,0 +1,25 @@
+// Navbar.scss
+
+@use 'sass:map';
+@use 'colors' as color;
+@use 'fonts' as font;
+@use 'extend';
+
+#navbar {
+  font-family: font.$title;
+  background-color: map.get(color.$palette, p1);
+
+  a {
+    color: map.get(color.$font, s1);
+    @extend %a-no-text-decoration-secondary;
+
+    button {
+      color: map.get(color.$font, s1);
+      text-transform: none;
+    }
+
+    svg {
+      color: map.get(color.$font, s1);
+    }
+  }
+}
