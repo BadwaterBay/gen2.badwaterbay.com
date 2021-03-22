@@ -1,6 +1,7 @@
 module.exports = {
   extends: [
     'airbnb',
+    'react-app',
     'eslint:recommended',
     'plugin:react/recommended',
     'plugin:jsx-a11y/recommended',
@@ -125,6 +126,8 @@ module.exports = {
         aspects: ['invalidHref'],
       },
     ],
+    'jsx-a11y/click-events-have-key-events': 'warn',
+    'jsx-a11y/no-static-element-interactions': 'warn',
   },
   plugins: ['react', 'react-hooks', 'prettier', '@typescript-eslint'],
 };
