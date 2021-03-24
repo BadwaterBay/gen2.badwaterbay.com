@@ -1,7 +1,9 @@
 # .eslintignore
 
-/node_modules
-/build
-*.*cache
-LICENSE
-yarn.lock
+**/LICENSE
+**/node_modules
+**/yarn.lock
+**/dist-server
+**/build
+**/*.*cache
+src/components/labelcopier/core/
