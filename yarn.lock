@@ -1649,12 +1649,10 @@
     "@babel/runtime" "^7.12.5"
     "@testing-library/dom" "^7.28.1"
 
-"@testing-library/user-event@^13.0.7":
-  version "13.0.11"
-  resolved "https://registry.yarnpkg.com/@testing-library/user-event/-/user-event-13.0.11.tgz#2dee91e020fb2ddbfff4e9e638bd15cc87d26396"
-  integrity sha512-8kM6h4HpvRVEqi7CIsLKt8iwQnmG/TUP4CPRJWXjfoIdJS3up+mI8NkU9WVd1oejli/+b4LTnLcEjNaltCTL5g==
-  dependencies:
-    "@babel/runtime" "^7.12.5"
+"@testing-library/user-event@^14.1.1":
+  version "14.1.1"
+  resolved "https://registry.yarnpkg.com/@testing-library/user-event/-/user-event-14.1.1.tgz#e1ff6118896e4b22af31e5ea2f9da956adde23d8"
+  integrity sha512-XrjH/iEUqNl9lF2HX9YhPNV7Amntkcnpw0Bo1KkRzowNDcgSN9i0nm4Q8Oi5wupgdfPaJNMAWa61A+voD6Kmwg==
 
 "@types/aria-query@^4.2.0":
   version "4.2.1"
